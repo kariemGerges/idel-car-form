@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ideal Car</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+    <body>
+        <header>
+            <h1><img src="car.png" />The Ideal Car<img src="car.png" /></h1>
+        </header>
+    <div class="main">
+        <form 
+        id="driversForm"
+        action="#"
+        method="get"
+    >
+    <fieldset>
+        <legend>Car Information</legend>
+            <label for="NewUsed">New/Used </label>
+            <select>
+                <option value="New">New</option>
+                <option value="Used">Used</option>
+            </select>
+            <br />
+            <br />
+            <fieldset>
+                <legend>Make and Model</legend>
+                <label for="make">Make </label>
+                    <select>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="audi" selected>Audi</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label for="year">Year:</label>
+                        <input
+                            type="number" 
+                            id="year" 
+                            name="year" 
+                            min="1990" max="2023" 
+                            required
+                            />
+                    <br />
+                    <br />
+        </fieldset>
+
+        <fieldset>
+                <legend>Interior and Exterior color</legend>
+            <label for="carColor">Choose Your Interior color </label>
+                <input type="color" id="colorbox" name="colorbox" >
+                <br />
+                <br />
+                <label for="carColor">Choose Your Interior color </label>
+                <input type="color" id="colorbox" name="colorbox" >
+                <br />
+                <br />
+        </fieldset>
+        <fieldset >
+            <legend>Car type</legend>
+            <label for="DriveOption">Choose your drive option</label>
+                <input 
+                    type="checkbox"
+                    id="driveOption"
+                    name="DriveOption"
+                    value="4 wheel Drive"
+                />
+                <label for="driveOption">4 wheel Drive</label>
+                    <input 
+                    type="checkbox"
+                    id="driveOption"
+                    name="DriveOption"
+                    value="2 wheel Drive"
+                    />
+                <label for="driveOption">2 wheel Drive</label>
+                <br />
+                <br />
+            <div>
+                <label for="carType"> Car Type</label>
+                <br>
+                <input
+                type="radio"
+                id="sedan"
+                name="carTypes"
+                value="sedan"
+              /><label for="sedan">Sedan Cars</label><br />
+              <input
+                type="radio"
+                id="SUV"
+                name="carTypes"
+                value="SUV"
+                checked
+              />
+              <label for="SUV">SUV Cars</label>
+              <br />
+              <input
+                type="radio"
+                id="compactSUV"
+                name="carTypes"
+                value="compactSUV"
+              />
+              <label for="compactSUV">compact SUV Cras</label>
+              </div>
+              <br><br>
+              <div>
+                <label for="carType">Fuel Type</label>
+                <br>
+                <input
+                  type="radio"
+                  id="Gas"
+                  name="fuelType"
+                  value="Gas"
+                />
+                <label for="Gas">Gas Cars</label><br />
+                <input
+                  type="radio"
+                  id="Hyprid"
+                  name="fuelType"
+                  value="Hyprid"
+                  checked
+                />
+                <label for="Hyprid">Hyprid Cars</label>
+                <br />
+                <input
+                  type="radio"
+                  id="Electric"
+                  name="fuelType"
+                  value="Electric"
+                />
+                <label for="Electric">Electric Cras</label>
+              </div>
+            </fieldset>
+              <label for="License">License Information</label>
+              <br>
+                  <textarea
+                      id="License"
+                      name="License"
+                      placeholder="License Information"
+                  >
+                  </textarea>
+                  <br>
+                  <br>
+                  <div class="center">
+                    <button
+                    type="submit"
+                    class="submitbutton center" 
+                    id="process" 
+                    value="sreach"
+                    >
+                    Sreach
+                </button>
+                </div>
+        </fieldset>
+       
+    </form>
+    </div>
+  </body>
+  </html>
